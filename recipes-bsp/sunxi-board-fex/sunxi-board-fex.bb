@@ -21,6 +21,7 @@ SUNXI_FEX_FILE_olinuxino-a20 = "sys_config/a20/a20-olinuxino_micro.fex"
 SUNXI_FEX_FILE_cubieboard = "sys_config/a10/cubieboard.fex"
 SUNXI_FEX_FILE_cubieboard2 = "sys_config/a20/cubieboard2.fex"
 SUNXI_FEX_FILE_cubietruck= "sys_config/a20/cubietruck.fex"
+SUNXI_FEX_FILE_bananapi= "sys_config/a20/Bananapi.fex"
 
 SUNXI_FEX_BIN_IMAGE = "fex-${MACHINE}-${PV}-${PR}.bin"
 SUNXI_FEX_BIN_IMAGE_SYMLINK = "fex-${MACHINE}.bin"
@@ -53,4 +54,4 @@ do_package_write_rpm[noexec] = "1"
 do_package_write_deb[noexec] = "1"
 do_populate_sysroot[noexec] = "1"
 
-COMPATIBLE_MACHINE = "(mele|meleg|olinuxino-a10s|olinuxino-a10|olinuxino-a13|olinuxino-a20|cubieboard|cubieboard2|cubietruck)"
+COMPATIBLE_MACHINE = "(mele|meleg|olinuxino-a10s|olinuxino-a10|olinuxino-a13|olinuxino-a20|cubieboard|cubieboard2|cubietruck|bananapi)"
