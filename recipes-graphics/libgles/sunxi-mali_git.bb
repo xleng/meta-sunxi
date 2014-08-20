@@ -49,6 +49,7 @@ do_install() {
     done
 }
 
+RPROVIDES_${PN} += "libEGL.so libGLESv2.so libGLESv1_CM.so"
 # Packages like xf86-video-fbturbo dlopen() libUMP.so, so we do need to ship the .so files in ${PN}
 FILES_${PN} += "${libdir}/lib*.so"
 FILES_${PN}-dev = "${includedir}"
