@@ -23,7 +23,7 @@ SUNXI_FEX_FILE_olinuxino-a20lime = "sys_config/a20/a20-olinuxino_lime.fex"
 SUNXI_FEX_FILE_cubieboard = "sys_config/a10/cubieboard.fex"
 SUNXI_FEX_FILE_cubieboard2 = "sys_config/a20/cubieboard2.fex"
 SUNXI_FEX_FILE_cubietruck= "sys_config/a20/cubietruck.fex"
-SUNXI_FEX_FILE_bananapi= "sys_config/a20/Bananapi.fex"
+SUNXI_FEX_FILE_bananapi= "sys_config/a20/BananaPi.fex"
 
 SUNXI_FEX_BIN_IMAGE = "fex-${MACHINE}-${PV}-${PR}.bin"
 SUNXI_FEX_BIN_IMAGE_SYMLINK = "fex-${MACHINE}.bin"
