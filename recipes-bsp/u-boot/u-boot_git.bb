@@ -19,7 +19,7 @@ DEFAULT_PREFERENCE_cubieboard2="1"
 DEFAULT_PREFERENCE_cubietruck="1"
 DEFAULT_PREFERENCE_bananapi="1"
 
-SRC_URI = "git://github.com/linux-sunxi/u-boot-sunxi.git;protocol=git;branch=sunxi"
+SRC_URI += "git://github.com/linux-sunxi/u-boot-sunxi.git;protocol=git;branch=sunxi "
 
 PE = "1"
 PV = "v2014.04+git${SRCPV}"

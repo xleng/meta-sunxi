@@ -7,6 +7,8 @@ inherit deploy
 
 EXTRA_OEMAKE = 'CROSS_COMPILE=${TARGET_PREFIX} CC="${TARGET_PREFIX}gcc ${TOOLCHAIN_OPTIONS}"'
 
+SRC_URI += "file://uEnv.txt"
+
 python () {
 	if not d.getVar("UBOOT_MACHINE", True):
 		PN = d.getVar("PN", True)
@@ -92,6 +94,9 @@ do_deploy () {
         ln -sf ${SPL_IMAGE} ${DEPLOYDIR}/${SPL_BINARY}
         ln -sf ${SPL_IMAGE} ${DEPLOYDIR}/${SPL_SYMLINK}
     fi
+
+    rm -f ${DEPLOYDIR}/uEnv.txt
+    install ${WORKDIR}/uEnv.txt ${DEPLOYDIR}/uEnv.txt
 }
 
 addtask deploy before do_build after do_compile

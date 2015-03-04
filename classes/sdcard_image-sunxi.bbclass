@@ -72,6 +72,9 @@ IMAGE_CMD_sunxi-sdimg () {
 	then
 		mcopy -i ${WORKDIR}/boot.img -s ${DEPLOY_DIR_IMAGE}/fex.bin ::script.bin
 	fi
+   
+   #copy uEnv.txt
+   mcopy -i ${WORKDIR}/boot.img -s ${DEPLOY_DIR_IMAGE}/uEnv.txt ::uEnv.txt
 
 	# Add stamp file
 	echo "${IMAGE_NAME}-${IMAGEDATESTAMP}" > ${WORKDIR}/image-version-info
